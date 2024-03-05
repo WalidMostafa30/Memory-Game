@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h2 class="name">walid</h2>
+        <h2 class="Wrong-tries">Wrong Tries: <span>0</span></h2>
+        <div class="timer"></div>
+      </header>
+
+      <section class="Game__container"></section>
+
+      <div class="Modal">
+        <h1 class="Modal__message"></h1>
+        <h3 class="Modal__score"></h3>
+        <span class="Modal__btn">Play Again?</span>
+      </div>
+    </main>
+
+    <audio id="correct" src="./sound/correct.mp3" preload="auto"></audio>
+    <audio id="wrong" src="./sound/wrong.mp3" preload="auto"></audio>
+
+    <script src="./JS/Data.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
