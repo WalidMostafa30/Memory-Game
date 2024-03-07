@@ -41,10 +41,13 @@ const gameImgs = [
 
 const shufImg = gameImgs.sort(() => (Math.random() > 0.5 ? 2 : -1));
 const gameContainer = document.querySelector(".Game__container");
-shufImg.map((e) => {
-  gameContainer.innerHTML += `
+function getData() {
+  shufImg.map((e) => {
+    gameContainer.innerHTML += `
       <div class="Game__card" data-name=${e}>
         <img src=${e} alt="img" />
       </div>
       `;
-});
+  });
+}
+getData();

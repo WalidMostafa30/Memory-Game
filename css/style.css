@@ -103,7 +103,7 @@ main {
       position: absolute;
       inset: 0;
       background-color: #777d7d;
-      opacity: 0.9;
+      /* opacity: 0.9; */
       transform: rotateY(0deg);
       backface-visibility: hidden;
       transition: transform 0.5s;

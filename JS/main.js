@@ -90,3 +90,14 @@ function countDown() {
 ModalBtn.addEventListener("click", () => {
   window.location.reload();
 });
+
+window.addEventListener("load", () => {
+  cards.forEach((box) => {
+    setTimeout(() => {
+      box.classList.add("open");
+    }, duration);
+    setTimeout(() => {
+      box.classList.remove("open");
+    }, 5000);
+  });
+});
